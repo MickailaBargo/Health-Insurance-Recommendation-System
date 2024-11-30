@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Insurance Recommendation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Health Insurance Recommendation System</h1>
+  </header>
+
+  <main>
+    <section id="form-section">
+      <h2>Find Your Ideal Health Insurance Plan</h2>
+      <form id="policy-form">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+        
+        <label for="health">Health Condition:</label>
+        <select id="health" name="health" required>
+          <option value="Good">Good</option>
+          <option value="Average">Average</option>
+          <option value="Poor">Poor</option>
+        </select>
+        
+        <label for="preferences">Coverage Preferences:</label>
+        <textarea id="preferences" name="preferences" placeholder="Describe your preferences (Family, Affordable)"></textarea>
+
+        <button type="submit">Get Recommendations</button>
+      </form>
+    </section>
+
+    <section id="results-section" class="hidden">
+      <h2>Your Recommended Policies</h2>
+      <div id="results"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Health Plan design by Mikaila Bargo</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
